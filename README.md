@@ -2,14 +2,15 @@ php-safe-functions
 ==================
 
 This is a re-usable, PHP array format, whitelist of server-safe functions to generate a PHP sandbox.
-"server-safe" means it should be safe for the server. Obviously, some functions like "echo" could still be used to generate XSS attacks. I'm not preventing these functions to be part of the whitelist.
+"server-safe" means it should be safe for the server, with the specific focus of building a sandbox and avoid people to attack the server or go around deleting or simply reading sensible files.
+Obviously, some functions like "echo" could still be used to generate XSS attacks. I'm not preventing these functions to be part of the whitelist.
 
-This is not meant to be a "stable" project. I'll try to update the list as soon as I find more functions to add.
+This is not meant to be a "stable" project. I'll try to update the list and release tags as soon as more server-safe functions are added.
 
 Warning
 -------
 
-This is still meant as a test project, there is no way I can be held responsible if 
+This is still meant as a test project, there is no way I can be held responsible if you use it and everything goes wrong. Check the license (GNU/LGPLv3) for more information.
 
 Building process
 ----------------
